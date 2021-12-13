@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/style.scss';
+import '../src/scss/fontawesome.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '../node_modules/bootstrap/dist/js/bootstrap.min';
 
 ReactDOM.render(
   <React.StrictMode>
