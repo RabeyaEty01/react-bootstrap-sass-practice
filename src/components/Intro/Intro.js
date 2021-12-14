@@ -42,8 +42,8 @@ const Intro = () => {
 
 
                         {/* start the content for the video  */}
-                        <div onClick={openModal} className="col-md-6 intros text-end">
-                            <div className="video-box">
+                        <div  className="col-md-6 intros text-end">
+                            <div onClick={openModal} className="video-box">
                                 <img src={introImg} className="img-fluid" alt="video illustration" />
                                 <a href="#" className="position-absolute top-50 start-50 translate-middle">
                                     <span >
@@ -52,12 +52,11 @@ const Intro = () => {
                                     </span>
                                     <span className="border-animation border-animation--border-1" />
                                     <span className="border-animation border-animation--border-2" />
-                                </a>
-                            </div>
+                                </a> 
                             {modal ? (
                                 <section className="modal__bg">
                                     <div className="modal__align">
-                                        <div className="modal__content" modal={modal}>
+                                        <div className="modal__content shadow" modal={modal}>
                                             <IoCloseOutline
                                                 className="modal__close"
                                                 arial-label="Close modal"
@@ -89,7 +88,7 @@ const Intro = () => {
                                     </div>
                                 </section>
                             ) : null}
-
+                            </div>
                         </div>
                     </div>
                 </div>

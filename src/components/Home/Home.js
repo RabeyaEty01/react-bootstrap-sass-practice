@@ -1,4 +1,5 @@
 import React from 'react';
+import Companies from '../Companies/Companies';
 import Intro from '../Intro/Intro';
 import Navbar from '../Shared/Navbar/Navbar';
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
           <Navbar></Navbar>
           <Intro></Intro>
+          <Companies></Companies>
     {/* <div class="container-xxl">
         <div class="row mt-3">
             <div class="col-lg-4 col-md-6">
