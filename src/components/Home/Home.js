@@ -1,6 +1,7 @@
 import React from 'react';
 import Companies from '../Companies/Companies';
 import Intro from '../Intro/Intro';
+import Services from '../Services/Services';
 import Navbar from '../Shared/Navbar/Navbar';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
           <Navbar></Navbar>
           <Intro></Intro>
           <Companies></Companies>
+          <Services></Services>
     {/* <div class="container-xxl">
         <div class="row mt-3">
             <div class="col-lg-4 col-md-6">
