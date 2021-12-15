@@ -9,12 +9,11 @@ const Services = () => {
             <div className="container">
                 <div className="row text-center">
                     <h1 className="display-3 fw-bold">Our services</h1>
-                    <div className="heading-line mb-5"></div>
+                    <div className="heading-line"></div>
                 </div>
             </div>
             {/* description content  */}
-            <div className="container">
-                <div className="row pt-2 pb-2 mt-5 mb-3">
+                <div className="row pt-2 pb-2 mt-0 mb-3">
                     <div className="col-md-6 border-right">
                         <div className="bg-white p-3">
                             <h2 className="fw-bold text-capitalize text-center">
@@ -32,7 +31,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            
             {/* start the content for the services  */}
             <div className="container">
 
