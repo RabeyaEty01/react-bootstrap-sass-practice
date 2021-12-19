@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import introImg from '../../images/arts/intro-section-illustration.png';
-import { IoCloseOutline } from "react-icons/io5";
-import { BiLoaderAlt } from "react-icons/bi";
+// import { IoCloseOutline } from "react-icons/io5";
+// import { BiLoaderAlt } from "react-icons/bi";
 
 const Intro = () => {
-    const [modal, setModal] = useState(false);
-    const [videoLoading, setVideoLoading] = useState(true);
+    // const [modal, setModal] = useState(false);
+    // const [videoLoading, setVideoLoading] = useState(true);
 
-    const openModal = () => {
-        setModal(!modal);
-    };
+    // const openModal = () => {
+    //     setModal(!modal);
+    // };
 
-    const spinner = () => {
-        setVideoLoading(!videoLoading);
-    };
+    // const spinner = () => {
+    //     setVideoLoading(!videoLoading);
+    // };
 
 
     return (
@@ -24,9 +24,9 @@ const Intro = () => {
                     {/* start the content for the intro  */}
                     <div className="row align-items-center text-white">
                         <div className="col-md-6 intros text-start">
-                            <h1 className="display-2">
-                                <span className="display-2--intro">Hey!, <br /> I'm Rabeya</span>
-                                <span className="display-2--description lh-base">
+                            <h1>
+                                <span className="fw-bold">Hey!, <br /> I'm Rabeya</span>
+                                <span className="fs-5 d-block mt-2  lh-base">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Quos, illo? Molestiae nemo facilis, culpa laboriosam
                                     dolore est nostrum earum reiciendis magni sapiente!
@@ -34,7 +34,7 @@ const Intro = () => {
                             </h1>
 
                             <button type="button" class="btn-rounded rounded-pill bg-white border-0 d-flex justify-content-between px-2 py-1">
-                                <span className='fw-bold m-2'>Get in Touch</span>
+                                <span className='fw-bold m-2 py-1'>Get in Touch</span>
                                 <span className='btn-icon rounded-circle p-2 m-1'><i className="fas fa-arrow-right m-1 text-white"></i>
                                 </span>
                             </button>
@@ -43,7 +43,8 @@ const Intro = () => {
 
                         {/* start the content for the video  */}
                         <div className="col-md-6 intros text-end">
-                            <div onClick={openModal} className="video-box">
+                            {/* <div onClick={openModal} className="video-box"> */}
+                            <div className="video-box">
                                 <img src={introImg} className="img-fluid" alt="video illustration" />
                                 <a href="#" className="position-absolute top-50 start-50 translate-middle">
                                     <span >
@@ -53,8 +54,10 @@ const Intro = () => {
                                     <span className="border-animation border-animation--border-1" />
                                     <span className="border-animation border-animation--border-2" />
                                 </a>
-                                {modal ? (
-                                    <section className="modal__bg">
+
+
+                                {/* {modal ? (
+                                    <section className="modal__bg position-fixed top-0 start-0 w-100 h-100 bg-dark">
                                         <div className="modal__align">
                                             <div className="modal__content shadow" modal={modal}>
                                                 <IoCloseOutline
@@ -87,7 +90,7 @@ const Intro = () => {
                                             </div>
                                         </div>
                                     </section>
-                                ) : null}
+                                ) : null} */}
                             </div>
                         </div>
                     </div>

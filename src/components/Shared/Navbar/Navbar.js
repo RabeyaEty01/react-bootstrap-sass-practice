@@ -9,9 +9,9 @@ const Navbar = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav  mb-2 mb-lg-0">
+            <ul class="navbar-nav  mb-2 mb-lg-0 px-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a className="nav-link active text-capitalize" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Services</a>
@@ -30,7 +30,7 @@ const Navbar = () => {
               </li>
             </ul>
             <button type="button" class="btn-rounded rounded-pill bg-white border-0 d-flex justify-content-between px-2 py-1">
-            <span className='fw-bold m-2'>+1 72843512</span>
+            <span className='fw-bold m-2 py-1'>+1 72843512</span>
             <span className='btn-icon rounded-circle p-2 m-1'><i className="fas fa-phone-alt m-1 text-white"></i>
             </span>
             </button>
