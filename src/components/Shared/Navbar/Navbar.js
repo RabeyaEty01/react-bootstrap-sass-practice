@@ -29,13 +29,12 @@ const Navbar = () => {
                 <a class="nav-link active" aria-current="page" href="#">Contact</a>
               </li>
             </ul>
-            <button type="button" class="rounded-pill btn-rounded">+1 72843512
-            <span>
-              <i className="fas fa-phone-alt"></i>
+            <button type="button" class="btn-rounded rounded-pill bg-white border-0 d-flex justify-content-between px-2 py-1">
+            <span className='fw-bold m-2'>+1 72843512</span>
+            <span className='btn-icon rounded-circle p-2 m-1'><i className="fas fa-phone-alt m-1 text-white"></i>
             </span>
             </button>
-
-
+            
           </div>
         </div>
       </nav>

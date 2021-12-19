@@ -32,17 +32,17 @@ const Intro = () => {
                                     dolore est nostrum earum reiciendis magni sapiente!
                                 </span>
                             </h1>
-                            <button type="button" class="rounded-pill btn-rounded">Get in Touch
-                                <span>
-                                    <i className="fas fa-arrow-right"></i>
+
+                            <button type="button" class="btn-rounded rounded-pill bg-white border-0 d-flex justify-content-between px-2 py-1">
+                                <span className='fw-bold m-2'>Get in Touch</span>
+                                <span className='btn-icon rounded-circle p-2 m-1'><i className="fas fa-arrow-right m-1 text-white"></i>
                                 </span>
                             </button>
-
                         </div>
 
 
                         {/* start the content for the video  */}
-                        <div  className="col-md-6 intros text-end">
+                        <div className="col-md-6 intros text-end">
                             <div onClick={openModal} className="video-box">
                                 <img src={introImg} className="img-fluid" alt="video illustration" />
                                 <a href="#" className="position-absolute top-50 start-50 translate-middle">
@@ -52,42 +52,42 @@ const Intro = () => {
                                     </span>
                                     <span className="border-animation border-animation--border-1" />
                                     <span className="border-animation border-animation--border-2" />
-                                </a> 
-                            {modal ? (
-                                <section className="modal__bg">
-                                    <div className="modal__align">
-                                        <div className="modal__content shadow" modal={modal}>
-                                            <IoCloseOutline
-                                                className="modal__close"
-                                                arial-label="Close modal"
-                                                onClick={setModal}
-                                            />
-                                            <div className="modal__video-align">
-                                                {videoLoading ? (
-                                                    <div className="modal__spinner">
-                                                        <BiLoaderAlt
-                                                            className="modal__spinner-style"
-                                                            fadeIn="none"
-                                                        />
-                                                    </div>
-                                                ) : null}
-                                                <iframe
-                                                    className="modal__video-style"
-                                                    onLoad={spinner}
-                                                    loading="lazy"
-                                                    width="800"
-                                                    height="500"
-                                                    src="https://www.youtube.com/embed/4UZrsTqkcW4"
-                                                    title="YouTube video player"
-                                                    frameBorder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen
-                                                ></iframe>
+                                </a>
+                                {modal ? (
+                                    <section className="modal__bg">
+                                        <div className="modal__align">
+                                            <div className="modal__content shadow" modal={modal}>
+                                                <IoCloseOutline
+                                                    className="modal__close"
+                                                    arial-label="Close modal"
+                                                    onClick={setModal}
+                                                />
+                                                <div className="modal__video-align">
+                                                    {videoLoading ? (
+                                                        <div className="modal__spinner">
+                                                            <BiLoaderAlt
+                                                                className="modal__spinner-style"
+                                                                fadeIn="none"
+                                                            />
+                                                        </div>
+                                                    ) : null}
+                                                    <iframe
+                                                        className="modal__video-style"
+                                                        onLoad={spinner}
+                                                        loading="lazy"
+                                                        width="800"
+                                                        height="500"
+                                                        src="https://www.youtube.com/embed/4UZrsTqkcW4"
+                                                        title="YouTube video player"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen
+                                                    ></iframe>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </section>
-                            ) : null}
+                                    </section>
+                                ) : null}
                             </div>
                         </div>
                     </div>
