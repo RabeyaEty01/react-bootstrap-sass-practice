@@ -7,10 +7,11 @@
     }
     &:hover{
         @include gradient;
-        outline: 1px solid $white;
+        border: none;
+        outline: 0.031rem solid $white !important;
         color: $white;
         .btn-icon{
-            background-color:rgb(75, 224, 75);
+            background-color:$teal;
         }
     }
 }
