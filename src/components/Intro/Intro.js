@@ -4,16 +4,7 @@ import introImg from '../../images/arts/intro-section-illustration.png';
 // import { BiLoaderAlt } from "react-icons/bi";
 
 const Intro = () => {
-    // const [modal, setModal] = useState(false);
-    // const [videoLoading, setVideoLoading] = useState(true);
 
-    // const openModal = () => {
-    //     setModal(!modal);
-    // };
-
-    // const spinner = () => {
-    //     setVideoLoading(!videoLoading);
-    // };
 
 
     return (
@@ -43,7 +34,7 @@ const Intro = () => {
 
                         {/* start the content for the video  */}
                         <div className="col-md-6 intros text-end">
-                            {/* <div onClick={openModal} className="video-box"> */}
+                           
                             <div className="video-box">
                                 <img src={introImg} className="img-fluid" alt="video illustration" />
                                 <a href="#" className="position-absolute top-50 start-50 translate-middle">
@@ -54,43 +45,6 @@ const Intro = () => {
                                     <span className="border-animation border-animation--border-1" />
                                     <span className="border-animation border-animation--border-2" />
                                 </a>
-
-
-                                {/* {modal ? (
-                                    <section className="modal__bg position-fixed top-0 start-0 w-100 h-100 bg-dark">
-                                        <div className="modal__align">
-                                            <div className="modal__content shadow" modal={modal}>
-                                                <IoCloseOutline
-                                                    className="modal__close"
-                                                    arial-label="Close modal"
-                                                    onClick={setModal}
-                                                />
-                                                <div className="modal__video-align">
-                                                    {videoLoading ? (
-                                                        <div className="modal__spinner">
-                                                            <BiLoaderAlt
-                                                                className="modal__spinner-style"
-                                                                fadeIn="none"
-                                                            />
-                                                        </div>
-                                                    ) : null}
-                                                    <iframe
-                                                        className="modal__video-style"
-                                                        onLoad={spinner}
-                                                        loading="lazy"
-                                                        width="800"
-                                                        height="500"
-                                                        src="https://www.youtube.com/embed/4UZrsTqkcW4"
-                                                        title="YouTube video player"
-                                                        frameBorder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen
-                                                    ></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                ) : null} */}
                             </div>
                         </div>
                     </div>
