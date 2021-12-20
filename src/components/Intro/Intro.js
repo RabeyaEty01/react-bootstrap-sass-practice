@@ -35,7 +35,7 @@ const Intro = () => {
                             <div className="video-box">
                                 <img src={introImg} className="img-fluid" alt="video illustration" />
                                 <a href="#" className="position-absolute top-50 start-50 translate-middle">
-                                    <span >
+                                    <span>
                                         <i className="fas fa-play-circle">
                                         </i>
                                     </span>
@@ -47,7 +47,6 @@ const Intro = () => {
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,202.7C384,181,480,107,576,117.3C672,128,768,224,864,224C960,224,1056,128,1152,101.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-           <hr />
             </section>
     );
 };
